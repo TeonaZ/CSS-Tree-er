@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Tree-er</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> 
     <!-- ************************** -->
     <!-- add link to bootstrap here -->
     <!-- ************************** -->
@@ -22,35 +21,35 @@
     <!-- Bonus! Use documentation to style the nav -->
     <!-- ************************** -->
 
-    <nav class="container">
-      <div class="row">
-        <a class="Name col-2" href="#" >Tree-er</a>
-        <button class="Tree-er" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="Tree-er" href="#" >Tree-er</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="row" id="navbarSupportedContent">
-          <ul class="Menu">
-            <li class="Home">
-              <a class="Name col-2" aria-current="page" href="#">Home</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="Featured">
-              <a class="Name" href="#">Featured</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Featured</a>
             </li>
-            <li class="Learn-more">
-              <a class="Name col-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Learn More
               </a>
-              <ul class="Menu" aria-labelledby="navbarDropdown">
-                <li><a class="About" href="#">About</a></li>
-                <li><a class="Contact" href="#">Contact</a></li>
-                <li><hr class="Career" href="#">Career</hr></li>
-                <li><a class="Surprise me" href="#">Surprise me!</a></li>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="#">Contact</a></li>
+                <li><hr class="dropdown-divider>"</li>
+                <li><a class="dropdown-item" href="#">Surprise me!</a></li>
               </ul>
             </li>
           </ul>
-          <form class="form-Search">
-            <input class="form-search" type="search" placeholder="Search" aria-label="Search">
-            <button class="Search" type="submit">Search</button>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
       </div>
